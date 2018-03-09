@@ -7,9 +7,9 @@ The point of this is to build a simple pwa that handles:
 
 Essentially follows [Google's "Your First Progressive Web App" tutorial](https://codelabs.developers.google.com/codelabs/your-first-pwapp/#0)
 
-Run with parcel, but do what you want.
+For best results, needs [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en)
 
 ## Tech
-* [ParcelJS](https://parceljs.org/)
-* IndexDB
 * Service Workers
+* IndexDB
+* Express

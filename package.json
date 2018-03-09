@@ -1,17 +1,19 @@
 {
   "name": "pwa",
   "version": "1.0.0",
-  "description": "",
+  "description": "pwa tutorial",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blakeface/progressWebApp.git"
+  },
   "main": "index.js",
   "scripts": {
-    "start": "parcel --open --no-hmr --no-cache --no-source-maps index.html"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-plugin-transform-runtime": "^6.23.0"
-  },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
