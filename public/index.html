@@ -10,14 +10,16 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
 
-	<!-- javascript -->
-	<script src="./index.js"></script>
-
 </head>
 <body>
 	<h1>🚀🚀🚀🚀🚀🚀🚀</h1>
 
-	<form method="post" action="/submit">
+	<form method="post" action="/submit" id="form">
+
+		<!-- response id -->
+		<input type="hidden" name="response-id" id="response-id" value="01">
+
+		<!-- visible form data -->
 		<label for="word">What's your favorite word?</label>
 		<input type="text" id="word" name="word" />
 
@@ -49,5 +51,8 @@
 	</form>
 
 	<h2>🚀🚀🚀🚀🚀🚀🚀</h2>
+
+	<!-- javascript -->
+	<script src="./index.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const cacheName = 'blakeIsAwesome_00'
+const cacheName = 'blakeIsAwesome_01'
 const cachedFiles = [
 	'/index.html',
 	'/index.js',
@@ -29,7 +29,7 @@ self.addEventListener('install', function(e) {
 
 // STEP 2: activate and validate cached assets
 self.addEventListener('activate', function(e) {
-	console.log('🤖 activate!');
+	console.log('🤖 activate and delete old cache!');
 
 	// holdup! wait until all fetch procedures are finished before moving forward
 	// this allows service workers to update db schemas and delete old caches (done below)
@@ -66,14 +66,6 @@ self.addEventListener('fetch', function(e) {
 				if (response) {
 					console.log('🤖 fetch response:', response.url)
 					return response;
-				}
-				// else try to refech request url
-				// if indexdb isn't set up, then cache will fail here
-				try {
-					console.log('🤖 fetch request:', e.request.url)
-					return fetch(e.request);
-				} catch (err) {
-					console.error('🚨 in fetch:', err)
 				}
 			})
 	);
